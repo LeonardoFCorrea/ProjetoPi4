@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Tradutor C++ para Marie ASM</title>
+  </head>
+  <body id="teste2">
+    <form action="?" method="POST">
+      <div class="text-areas">
+        <textarea id="taConteudo" name="taConteudo" placeholder="Digite seu código C++ aqui!!" cols="30" rows="25"></textarea>
+        <textarea id="taTraducao" name="taTraducao" cols="30" rows="25"></textarea>
+      </div>
+      <input type="button" class="btn-translate" name="vai" value="Traduzir" onclick="javascript:processa()" />
+      <input type="button" class="btn-translate" name="vai" value="Tema Claro" onclick="javascript:temaClaro()" />
+      <input type="button" class="btn-translate" name="vai" value="Teste" onclick="javascript:teste()" />
+    </form>
+    <div id="teste">
+    </div>
+    <!-- TESTE PARA COLOCAR ELEMENTOS USANDO INNER HTML 
+      <script>
+        function teste() {
+          document.getElementById("teste").innerHTML = document.getElementById("teste").innerHTML + "<span>oi</span>";
+        }
+      </script>
+    -->
+    <script src="assets/js/translate.js"></script>
+  </body>
+</html>
