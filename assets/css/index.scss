@@ -3,8 +3,40 @@ $cor-primaria: #050801;
 $cor-secundaria: #f2b705;
 $cor-terciaria: #f2d479;
 
-.temaClaro {
-  background-color: white;
+.body-dark {
+  background-color: $cor-primaria;
+}
+
+#taConteudo {
+  border: 1.5px solid $cor-secundaria;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+.btn-main-dark {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid $cor-secundaria;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  padding: 25px 0;
+  color: darkgray;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+
+  &:hover {
+    background: $cor-terciaria;
+    color: $cor-primaria;
+    box-shadow: 0 0 5px #f2e8b3, 0 0 25px $cor-secundaria,
+      0 0 50px $cor-secundaria, 0 0 75px $cor-secundaria;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
 }
 
 body {
@@ -15,7 +47,7 @@ body {
   width: 100vw;
   margin: 0;
   font-size: 10px;
-  background: $cor-primaria;
+  background: white;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   form {
@@ -27,29 +59,27 @@ body {
   }
 }
 
-.btn-translate {
+.btn-main {
   cursor: pointer;
-  background-color: transparent;
+  background-color: $cor-secundaria;
   border: 1px solid $cor-secundaria;
   border-radius: 10px;
   position: relative;
   display: inline-block;
-  padding: 25px 30px;
-  color: darkgray;
+  padding: 25px 0;
+  color: grayscale($color: #212322);
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
-  width: 50%;
-  margin-left: 25%;
   margin-top: 20px;
 
   &:hover {
     background: $cor-terciaria;
     color: $cor-primaria;
-    box-shadow: 0 0 5px #f2e8b3, 0 0 25px $cor-secundaria, 0 0 50px $cor-secundaria,
-      0 0 75px $cor-secundaria;
+    box-shadow: 0 0 5px #f2e8b3, 0 0 25px $cor-secundaria,
+      0 0 50px $cor-secundaria, 0 0 75px $cor-secundaria;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
   }
 }
