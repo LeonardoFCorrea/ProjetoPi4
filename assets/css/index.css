@@ -1,5 +1,35 @@
-.temaClaro {
-  background-color: white;
+.body-dark {
+  background-color: #050801;
+}
+
+#taConteudo {
+  border: 1.5px solid #f2b705;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+.btn-main-dark {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #f2b705;
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  padding: 25px 0;
+  color: darkgray;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.btn-main-dark:hover {
+  background: #f2d479;
+  color: #050801;
+  box-shadow: 0 0 5px #f2e8b3, 0 0 25px #f2b705, 0 0 50px #f2b705, 0 0 75px #f2b705;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 body {
@@ -10,7 +40,7 @@ body {
   width: 100vw;
   margin: 0;
   font-size: 10px;
-  background: #050801;
+  background: white;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
@@ -22,25 +52,23 @@ body form .text-areas {
   display: flex;
 }
 
-.btn-translate {
+.btn-main {
   cursor: pointer;
-  background-color: transparent;
+  background-color: #f2b705;
   border: 1px solid #f2b705;
   border-radius: 10px;
   position: relative;
   display: inline-block;
-  padding: 25px 30px;
-  color: darkgray;
+  padding: 25px 0;
+  color: #222222;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
-  width: 50%;
-  margin-left: 25%;
   margin-top: 20px;
 }
-.btn-translate:hover {
+.btn-main:hover {
   background: #f2d479;
   color: #050801;
   box-shadow: 0 0 5px #f2e8b3, 0 0 25px #f2b705, 0 0 50px #f2b705, 0 0 75px #f2b705;
