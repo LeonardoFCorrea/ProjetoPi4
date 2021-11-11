@@ -3,15 +3,13 @@ $cor-primaria: #050801;
 $cor-secundaria: #f2b705;
 $cor-terciaria: #f2d479;
 
-.body-dark {
-  background-color: $cor-primaria;
+p {
+  background-color:#EEEEEE;
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
 }
 
-#taConteudo {
-  border: 1.5px solid $cor-secundaria;
-  border-radius: 5px;
-  padding: 10px;
-  outline: none;
+.body-dark {
+  background-color: $cor-primaria;
 }
 
 .btn-main-dark {
@@ -51,36 +49,58 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   form {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     .text-areas {
       display: flex;
+      width: 50%;
+
+      #taConteudo {
+        border: 1.5px solid $cor-secundaria;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        width: 50%;
+        margin-right: 40px;
+      }
+      #traducao {
+        width: 50%;
+        border: 1px solid black;
+        padding: 10px;
+      }
     }
   }
 }
 
-.btn-main {
-  cursor: pointer;
-  background-color: $cor-secundaria;
-  border: 1px solid $cor-secundaria;
-  border-radius: 10px;
-  position: relative;
-  display: inline-block;
-  padding: 25px 0;
-  color: grayscale($color: #212322);
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.5s;
-  letter-spacing: 4px;
-  overflow: hidden;
-  margin-top: 20px;
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  .btn-main {
+    cursor: pointer;
+    background-color: $cor-secundaria;
+    border: 1px solid $cor-secundaria;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 25px 25px;
+    color: grayscale($color: #212322);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-top: 20px;
 
-  &:hover {
-    background: $cor-terciaria;
-    color: $cor-primaria;
-    box-shadow: 0 0 5px #f2e8b3, 0 0 25px $cor-secundaria,
-      0 0 50px $cor-secundaria, 0 0 75px $cor-secundaria;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    &:hover {
+      background: $cor-terciaria;
+      color: $cor-primaria;
+      box-shadow: 0 0 5px #f2e8b3, 0 0 25px $cor-secundaria,
+        0 0 50px $cor-secundaria, 0 0 75px $cor-secundaria;
+      -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    }
   }
 }
 

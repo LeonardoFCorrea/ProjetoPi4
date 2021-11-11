@@ -5,10 +5,10 @@ function traduz() {
   for (i; i < vetor.length; i++) {
     alert("linha " + (i + 1) + " => " + vetor[i]);
     if (vetor[i] == "int main() {") {
-      // traducao.value = "PUSH %23";
       document.getElementById("traducao").innerHTML =
         document.getElementById("traducao").innerHTML +
-        "<span>PUSH %12</span> <br>";
+        "<span>PUSH %BP</span> <br>" +
+        "<span>MOV  %SP, %BP</span> <br>";
     } else if (vetor[i] == "int a;") {
       document.getElementById("traducao").innerHTML =
         document.getElementById("traducao").innerHTML +

@@ -1,12 +1,10 @@
-.body-dark {
-  background-color: #050801;
+p {
+  background-color: #EEEEEE;
+  font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
 }
 
-#taConteudo {
-  border: 1.5px solid #f2b705;
-  border-radius: 5px;
-  padding: 10px;
-  outline: none;
+.body-dark {
+  background-color: #050801;
 }
 
 .btn-main-dark {
@@ -45,21 +43,42 @@ body {
   font-weight: bold;
 }
 body form {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 body form .text-areas {
   display: flex;
+  width: 50%;
+}
+body form .text-areas #taConteudo {
+  border: 1.5px solid #f2b705;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  width: 50%;
+  margin-right: 40px;
+}
+body form .text-areas #traducao {
+  width: 50%;
+  border: 1px solid black;
+  padding: 10px;
 }
 
-.btn-main {
+.btn-box {
+  display: flex;
+  flex-direction: column;
+}
+.btn-box .btn-main {
   cursor: pointer;
   background-color: #f2b705;
   border: 1px solid #f2b705;
   border-radius: 10px;
   position: relative;
   display: inline-block;
-  padding: 25px 0;
+  padding: 25px 25px;
   color: #222222;
   text-decoration: none;
   text-transform: uppercase;
@@ -68,7 +87,7 @@ body form .text-areas {
   overflow: hidden;
   margin-top: 20px;
 }
-.btn-main:hover {
+.btn-box .btn-main:hover {
   background: #f2d479;
   color: #050801;
   box-shadow: 0 0 5px #f2e8b3, 0 0 25px #f2b705, 0 0 50px #f2b705, 0 0 75px #f2b705;
