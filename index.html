@@ -5,9 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
     <title>Tradutor C++ para Marie ASM</title>
   </head>
   <body>
+    <div class="header">
+      <a href="#default" class="logo">Teste</a>
+      <div class="header-right">
+        <a href="#about">Teste</a>
+      </div>
+    </div>
     <form action="?" method="POST">
       <div class="text-areas">
         <textarea
@@ -17,28 +34,69 @@
           cols="30"
           rows="25"
           style="resize: none"
-          ></textarea>
-          <div id="traducao"></div>
+        ></textarea>
+        <div id="traducao"></div>
       </div>
       <div class="btn-box">
-      <input
-        type="button"
-        id="btn"
-        class="btn-main"
-        name="traduzir"
-        value="Traduzir"
-        onclick="javascript:traduz();"
-      />
-      <input
-        type="button"
-        id="btn-2"
-        class="btn-main"
-        name="TemaEscuro"
-        value="Tema Escuro"
-        onclick="javascript:temaClaro()"
-      />
-    </div>
+        <input
+          type="button"
+          id="btn"
+          class="btn-main"
+          name="traduzir"
+          value="Traduzir"
+          onclick="javascript:traduz();"
+        />
+        <input
+          type="button"
+          id="btn-2"
+          class="btn-main"
+          name="TemaEscuro"
+          value="Tema Escuro"
+          onclick="javascript:temaClaro()"
+        />
+      </div>
     </form>
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Teste</h3>
+              <ul>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Teste</h3>
+              <ul>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Teste</h3>
+              <ul>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+                <li><a href="#">Teste</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="#"><i class="icon ion-social-facebook"></i></a
+              ><a href="#"><i class="icon ion-social-twitter"></i></a
+              ><a href="#"><i class="icon ion-social-snapchat"></i></a
+              ><a href="#"><i class="icon ion-social-instagram"></i></a>
+              <p class="copyright">Teste © 2021</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/translate.js"></script>
   </body>
 </html>
