@@ -12,7 +12,7 @@ function traduz() {
       document.getElementById("traducao").innerHTML =
         document.getElementById("traducao").innerHTML +
         "<span>int a: OK</span> <br>";
-    } else if (vetor[i] == "cin >> a" || vetor[i] == "cin >> a;") {
+    } else if (vetor[i] == "cin>>a;" || vetor[i] == "cin >> a;") {
       document.getElementById("traducao").innerHTML =
         document.getElementById("traducao").innerHTML +
         "<span>cin >> a: OK</span> <br>";
