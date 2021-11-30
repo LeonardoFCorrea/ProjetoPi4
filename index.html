@@ -23,6 +23,7 @@
       <a href="./" class="logo">CtoMARIE</a>
       <div class="header-right">
         <a href="https://marie.js.org/" target="_blank">Site Referência</a>
+        <a href="./about.html" >Sobre Nós</a>
       </div>
     </div>
     <form action="?" method="POST">
@@ -43,6 +44,14 @@
             name="traduzir"
             value="Traduzir"
             onclick="javascript:traduz();"
+          />
+          <input
+            type="button"
+            id="btn"
+            class="btn-main fill"
+            name="resetar"
+            value="Resetar"
+            onclick="javascript:reseta();"
           />
         </div>
         <div id="traducao"></div>
@@ -65,12 +74,7 @@
           />
         </defs>
         <g class="parallax">
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="0"
-            fill="#9657bd"
-          />
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="#9657bd" />
           <use
             xlink:href="#gentle-wave"
             x="48"

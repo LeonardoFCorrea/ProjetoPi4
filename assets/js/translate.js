@@ -147,6 +147,24 @@ function traduz() {
         '<span class="plusA">LOAD B</span> <br>' +
         '<span class="plusA">ADD C</span> <br>' +
         '<span class="plusA">STORE A</span> <br>';
+    } else if (vetor[i] == "A = b + C;") {
+      document.getElementById("traducao").innerHTML =
+        document.getElementById("traducao").innerHTML +
+        '<span class="plusA">LOAD b</span> <br>' +
+        '<span class="plusA">ADD C</span> <br>' +
+        '<span class="plusA">STORE A</span> <br>';
+    } else if (vetor[i] == "A = b + c;") {
+      document.getElementById("traducao").innerHTML =
+        document.getElementById("traducao").innerHTML +
+        '<span class="plusA">LOAD b</span> <br>' +
+        '<span class="plusA">ADD c</span> <br>' +
+        '<span class="plusA">STORE A</span> <br>';
+    } else if (vetor[i] == "A = B + c;") {
+      document.getElementById("traducao").innerHTML =
+        document.getElementById("traducao").innerHTML +
+        '<span class="plusA">LOAD B</span> <br>' +
+        '<span class="plusA">ADD c</span> <br>' +
+        '<span class="plusA">STORE A</span> <br>';
     } else if (vetor[i] == "a = c + b;") {
       document.getElementById("traducao").innerHTML =
         document.getElementById("traducao").innerHTML +
@@ -210,10 +228,16 @@ function traduz() {
     } else if (vetor[i] == "}") {
       document.getElementById("traducao").innerHTML =
         document.getElementById("traducao").innerHTML +
-        '<span class="final">HALT</span>';
+        '<br><br><br><span class="final">HALT</span>';
     }
   }
-  alert.dismiss();
+  return false;
+}
+
+function reseta() {
+
+  document.getElementById("traducao").innerHTML = "";
+
   return false;
 }
 

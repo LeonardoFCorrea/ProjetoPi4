@@ -18,6 +18,7 @@ $colors: (
     font-size: 20px;
     line-height: 25px;
     border-radius: 4px;
+    margin-left: 20px;
 
     &.logo {
       font-size: 25px;
@@ -33,17 +34,17 @@ $colors: (
 
 .intA {
   position: absolute;
-  bottom: 25%;
+  bottom: 30%;
 }
 
 .intB {
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
 }
 
 .intC {
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
 }
 
 .header-right {
@@ -86,7 +87,7 @@ body {
 
       #taConteudo {
         border: 2px solid $cor-secundaria;
-        border-radius: 5px;
+        border-radius: 15px;
         padding: 10px;
         outline: none;
         width: 50%;
@@ -98,19 +99,22 @@ body {
       #traducao {
         border: 2px solid $cor-secundaria;
         width: 50%;
-        border-radius: 5px;
+        border-radius: 15px;
         padding: 10px;
         background-color: white;
         margin-left: 40px;
         font-family: "Inconsolata", monospace;
         font-size: 16px;
+        height: 100%;
       }
     }
   }
 }
 
 .btn-box {
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .btn-main {
     cursor: pointer;
@@ -128,6 +132,7 @@ body {
     overflow: hidden;
     font-weight: 650;
     color: white;
+    margin-bottom: 10px;
   }
 }
 
@@ -270,12 +275,10 @@ body {
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
+  margin-bottom: -7px;
   min-height: 100px;
   max-height: 150px;
 }
-
-/* Animation */
 
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
@@ -379,3 +382,44 @@ body {
     }
   }
 }
+
+
+  // ABOUT-US \\
+
+.containerUs {
+  height: 100%;
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  .aboutUs {
+    height: 11.3%;
+    width: 108px;
+    border: 4px solid blue;
+    border-radius: 50%;
+
+    .andre {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+
+    .ryanbryan {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+    
+    .william {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+
+    .leo {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+  }
+
+}
+
